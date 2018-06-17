@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExlevelActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ระดับการออกกำลังกาย"
+            android:textSize="35dp"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:textColor="@color/MainPink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupExlevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioExlevel_00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่ออกกำลังกายเลย"
+                android:textSize="25dp"
+                android:checked="true"
+                android:onClick="exlevel"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radioExlevel_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ออกกำลังกาย 1-3 ครั้ง/สัปดาห์"
+                android:textSize="25dp"
+                android:onClick="exlevel"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radioExlevel_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ออกกำลังกาย 4-5 ครั้ง/สัปดาห์"
+                android:textSize="25dp"
+                android:onClick="exlevel"
+                android:layout_marginBottom="10dp"/>
+
+            <RadioButton
+                android:id="@+id/radioExlevel_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ออกกำลังกาย 6-7 ครั้ง/สัปดาห์"
+                android:textSize="25dp"
+                android:onClick="exlevel"
+                android:layout_marginBottom="10dp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonExlevel"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="ต่อไป"
+            android:textSize="23dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:background="@drawable/register_button"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</RelativeLayout>

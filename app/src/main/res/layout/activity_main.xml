@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:id="@+id/HealthCareHead"
+        android:text="Health Care"
+        android:textSize="30dp"
+        android:textStyle="normal"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/health_care_head"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="45dp"
+        android:layout_below="@id/HealthCareHead">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:hint="ชื่อผู้ใช้งาน"
+                android:inputType="text" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:hint="รหัสผ่าน"
+                android:inputType="textPassword" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="ลงชื่อเข้าใช้"
+                android:textSize="23dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/register_button"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp" />
+
+            <Button
+                android:id="@+id/buttonPreRegister"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="สมัครสมาชิก"
+                android:textSize="23dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/register_button"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

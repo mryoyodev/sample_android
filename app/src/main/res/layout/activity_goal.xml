@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GoalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="เป้าหมายของคุณ"
+            android:textSize="30dp"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:textColor="@color/MainPink"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"/>
+
+        /* Type body */
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="รูปร่าง : "/>
+            <TextView
+                android:id="@+id/tvTypeBody"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="อ้วน/ผอม/สมส่วน"/>
+        </LinearLayout>
+
+        /* balance weight */
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="น้ำหนักที่เหมาะสม : "/>
+            <TextView
+                android:id="@+id/tvBalanceWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  กิโลกรัม"/>
+        </LinearLayout>
+
+        /* calorie per day */
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="แคลอรี่ที่ได้รับต่อวัน : "/>
+            <TextView
+                android:id="@+id/tvCalPerDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1500"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  กิโลแคลอรี่"/>
+        </LinearLayout>
+
+        /* Goal */
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ระยะเวลาถึงเป้าหมาย : "/>
+            <TextView
+                android:id="@+id/tvGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มี"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  สัปดาห์"/>
+        </LinearLayout>
+
+        /* Weight */
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="น้ำหนัก : "/>
+            <TextView
+                android:id="@+id/tvWeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มี"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  กิโลกรัม"/>
+        </LinearLayout>
+
+        /* Height */
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ส่วนสูง : "/>
+            <TextView
+                android:id="@+id/tvHeight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มี"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  เซนติเมตร"/>
+        </LinearLayout>
+
+        /* Diseases */
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="โรคประจำตัว : "/>
+            <TextView
+                android:id="@+id/tvDiseases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มี"/>
+        </LinearLayout>
+
+        /* Foodallergy */
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="อาหารที่แพ้ : "/>
+            <TextView
+                android:id="@+id/tvFoodallergy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ไม่มี"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
